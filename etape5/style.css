@@ -1,0 +1,100 @@
+#table_container {
+    width: 90%;
+    margin: 40px auto;
+    font-family: Calibri, Arial, sans-serif;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #e0e0e0;
+    padding: 10px;
+}
+
+th {
+    background-color: #0086b3;
+    color: white;
+    text-align: center;
+}
+
+.col_number,
+.col_chkbox {
+    width: 10%;
+    text-align: center;
+}
+
+.col_text {
+    width: 35%;
+}
+
+td.col_text {
+    text-align: left;
+}
+
+#container_summary {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 10px;
+    background-color: #eeeeee;
+    border: 1px solid #e0e0e0;
+}
+
+#p2 {
+    flex: 1;
+}
+
+#form_container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 0;
+}
+
+.form_group {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex: 1 1 200px;
+    min-width: 0;
+}
+
+.form_label {
+    font-weight: bold;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.form_field {
+    width: 100%;
+    min-width: 0;
+    padding: 7px;
+    box-sizing: border-box;
+    border: 1px solid #999999;
+    font: inherit;
+}
+
+#form_message {
+    padding: 10px;
+    background: #edf6fa;
+}
+
+td.col_text {
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 600px) {
+    #table_container {
+        width: 96%;
+        margin: 16px auto;
+    }
+
+    th, td {
+        padding: 6px 3px;
+    }
+}

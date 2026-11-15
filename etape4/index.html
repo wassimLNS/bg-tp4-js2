@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Étape 4 - Résumé</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="table_container">
+        <table aria-label="Liste des personnes">
+            <thead>
+                <tr>
+                    <th scope="col" class="col_number">N°</th>
+                    <th scope="col" class="col_text">Nom</th>
+                    <th scope="col" class="col_text">Prénom</th>
+                    <th scope="col" class="col_number">Points</th>
+                    <th scope="col" class="col_chkbox">Select</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <div id="container_summary" aria-live="polite">
+            <p id="p1">0 ligne(s)</p>
+            <p id="p2"></p>
+            <p id="p3">Total point(s) = 0</p>
+        </div>
+        <button type="button" id="btn_add">Ajouter</button>
+        <button type="button" id="btn_console">Console Tableau</button>
+    </div>
+</body>
+</html>

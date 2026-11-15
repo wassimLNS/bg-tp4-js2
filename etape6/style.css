@@ -1,0 +1,148 @@
+#table_container {
+    width: 90%;
+    margin: 40px auto;
+    font-family: Calibri, Arial, sans-serif;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #e0e0e0;
+    padding: 10px;
+}
+
+th {
+    background-color: #0086b3;
+    color: white;
+    text-align: center;
+}
+
+.col_number,
+.col_chkbox {
+    width: 10%;
+    text-align: center;
+}
+
+.col_text {
+    width: 35%;
+}
+
+td.col_text {
+    text-align: left;
+}
+
+#container_summary {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 10px;
+    background-color: #eeeeee;
+    border: 1px solid #e0e0e0;
+}
+
+#p2 {
+    flex: 1;
+}
+
+#form_container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 0;
+}
+
+.form_group {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex: 1 1 200px;
+    min-width: 0;
+}
+
+.form_label {
+    font-weight: bold;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.form_field {
+    width: 100%;
+    min-width: 0;
+    padding: 7px;
+    box-sizing: border-box;
+    border: 1px solid #999999;
+    font: inherit;
+}
+
+#form_message {
+    padding: 10px;
+    background: #edf6fa;
+}
+
+#container_btn,
+#extra_controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 0;
+}
+
+#container_btn {
+    justify-content: flex-end;
+}
+
+button {
+    padding: 9px 12px;
+    border: 1px solid #777777;
+    border-radius: 2px;
+    font: inherit;
+    cursor: pointer;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+
+.btn-add,
+#btn_save {
+    background: #008a00;
+    border-color: #008a00;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-del {
+    background: #df0000;
+    border-color: #df0000;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-consol {
+    background: #936b00;
+    border-color: #936b00;
+    color: white;
+    font-weight: bold;
+}
+
+td.col_text {
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 600px) {
+    #table_container {
+        width: 96%;
+        margin: 16px auto;
+    }
+
+    th, td {
+        padding: 6px 3px;
+    }
+}

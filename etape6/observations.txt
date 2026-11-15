@@ -1,0 +1,25 @@
+TP4 JavaScript - Observations
+
+Actualisation (étapes 2 et 6)
+Les ajouts, modifications et suppressions ne modifient que le DOM et les
+données JavaScript en mémoire. Après actualisation, le navigateur recharge
+les fichiers et recrée les trois personnes initiales. Il n'y a pas de
+sauvegarde persistante.
+
+Trois fonctionnalités supplémentaires (étape 6)
+1. Modifier une personne : cocher une seule ligne, cliquer sur Modifier la
+   sélection, changer les champs puis Enregistrer. Annuler abandonne la saisie.
+2. Tout sélectionner : cocher ou décocher toutes les lignes en une action.
+3. Trier par points : chaque clic alterne entre ordre croissant et décroissant.
+Le tableau persons et le résumé sont mis à jour après les modifications.
+
+Étape 7 - Observation du flux réseau
+Vérification effectuée dans Edge avec un serveur HTTP local : index.html,
+style.css et script.js sont reçus avec le statut HTTP 200.
+La réponse script.js contient le code JavaScript complet, notamment deleteRow.
+Pour reproduire : ouvrir etape6/index.html via un serveur HTTP local, ouvrir
+les outils de développement (F12), sélectionner Network/Réseau, recharger
+la page puis ouvrir script.js et son onglet Preview/Aperçu ou Response/Réponse.
+Le code envoyé au navigateur est accessible à l'utilisateur. Un mot de passe
+ou un secret écrit dans ce code serait donc visible. Les secrets doivent
+rester côté serveur et les autorisations doivent y être vérifiées.
